@@ -1,0 +1,45 @@
+body {
+  background-image: url(662102.png);
+}
+
+.title {
+  font-size: large;
+  background-color: rgb(239, 78, 14);
+  text-align: center;
+  border-radius: 25px;
+  width: 50%;
+  margin: auto;
+}
+
+.left-right-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.left,
+.right {
+  border: 10px solid black;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 85vh;
+  width: 45%;
+  margin-right: 75px;
+}
+
+#charziard {
+  border: 15px solid #ffa500;
+  border-radius: 50%;
+  background-color: lightcoral;
+  width: 60%;
+  margin-top: 25px;
+}
+
+.pokemon-color,
+.pokemon-pokedex-entry {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 2.5%;
+}
