@@ -7,35 +7,24 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <!-- Pokemon Starters Gen 1
-        Charziard, Blastoise, Venusuar 
+    <div class="header">
+      <a href="venusuar.html" class="previous round">&#8249;</a>
 
-        <ul> or <ol>: random facts like move sets or pokedex entry
-        <table>: States
-        <img>: picture of each starter and their evolutions 
-        <select>: shiny version for img? 
-        <a>: link to bulbapedia 
-
-        
-        Notes: 
-        colored bolded circle with img inside 
-    -->
-
-    <div class="title">
-      <h1>Charizard リザードン #0006</h1>
+      <div class="title">
+        <h1 id="charizard">Charizard リザードン #0006</h1>
+      </div>
+      <a href="blastoise.html" class="next round">&#8250;</a>
     </div>
-    <div class="left-right-container">
-      <div class="left">
-        <img id="charziard" src="006.png" alt="Picture of Charziard" />
 
-        <div class="pokemon-color">
-          Color:
-          <select>
-            <option value="normal">Normal</option>
-            <option value="shiny">Shiny</option>
-          </select>
-        </div>
+    <div class="top-container">
+      <img
+        id="charizard"
+        class="pokemon-img"
+        src="./images/006.png"
+        alt="image of pokemon charizard"
+      />
 
+      <div class="container-vertical">
         <div class="pokemon-pokedex-entry">
           <p>
             Charizard is a powerful, dragon-like Pokémon known for its fiery
@@ -51,21 +40,123 @@
             its flames against weaker opponents.
           </p>
         </div>
-      </div>
+        <div class="container-horizontal">
+          <div class="pokemon-types">
+            <h2>Type</h2>
+            <span class="type fire">Fire</span>
+            <span class="type flying">Flying</span>
 
-      <div class="right">
-        <div class="pokemon-pokedex-data">
-          <h2>Pokedex Data</h2>
-          Type: Fire Flying Species: Flame Pokemon Height: 1.7m
+            <h2>Weakness</h2>
+            <span class="type water">Water</span>
+            <span class="type electric">Electric</span>
+            <span class="type rock">Rock</span>
+          </div>
+
+          <div class="pokemon-pokedex-data"></div>
+            <table>
+              <tr>
+                <th>Height</th>
+                <th>Category</th>
+              </tr>
+              <tr>
+                <td>1.7m (5' 07")</td>
+                <td>Flame</td>
+              </tr>
+              <tr>
+                <th>Weight</th>
+                <th>Abilities</th>
+              </tr>
+              <tr>
+                <td>199.5 lbs</td>
+                <td>Blaze???</td>
+              </tr>
+              <tr>
+                <th>Gender</th>
+              </tr>
+              <tr>
+                <td><span style="color:lightskyblue">87.5% male</span><span style="color:pink"> 12.5% female</span></td>
+              </tr>
+            </table>
+          </div> 
+          <div class="stats">
+            <h2>Base Stats</h2>
+            <table>
+              <tr>
+                <th>Total</th>
+                <td style="font-weight: bold;">634</td>
+                <td class="cell-barchart"></td>
+                <th>Min</th>
+                <th>Total</th>
+              </tr>
+              <tr>
+                <th>HP</th>
+                <td>87</td>
+                <td class="cell-barchart"><div class="barchart-bar" style="width:87px; background-color: #ffdd57;;"></div></td>
+                <td>266</th>
+                <td>360</th>
+              </tr>
+              <tr>
+                <th>Attack</th>
+                <td>130</td>
+                <td class="cell-barchart"><div class="barchart-bar" style="width:130px; background-color:#23cd5e ;"></div></td>
+                <td>238</th>
+                <td>394</th>
+              </tr>
+              <tr>
+                <th>Defense</th>
+                <td>111</td>
+                <td class="cell-barchart"><div class="barchart-bar" style="width:111px; background-color:#a0e515 ;"></div></td>
+                <td>204</th>
+                <td>353</th>
+              </tr>
+              <tr>
+                <th>Sp. Atk</th>
+                <td>130</td>
+                <td class="cell-barchart"><div class="barchart-bar" style="width:131px; background-color:#23cd5e ;"></div></td>
+                <td>238</th>
+                <td>394</th>
+              </tr>
+              <tr>
+                <th>Sp. Def</th>
+                <td>85</td>
+                <td class="cell-barchart"><div class="barchart-bar" style="width:85px; background-color:#ffdd57 ;"></div></td>
+                <td>157</th>
+                <td>295</th>
+              </tr>
+              <tr>
+                <th>Speed</th>
+                <td>100</td>
+                <td class="cell-barchart"><div class="barchart-bar" style="width:100px; background-color:#a0e515 ;"></div></td>
+                <td>184</th>
+                <td>328</th>
+              </tr>
+            </table>
+          </div>
         </div>
-        <div class="typesAdvDis">
-          <h2>Type</h2>
-          Fire Flying
-          <h2>Weakness</h2>
-          Water Electric Rock
+        <div class="pokemon-moveset">
+          <h2>Popular Movesets</h2>
+          <ul>
+            <li>Blastburn</li>
+            <li>Flamethrower</li>
+            <li>Dragon Claw</li>
+            <li>Fly</li>
+            <li>Earthquake</li>
+          </ul>
+
         </div>
-        <div class="stats">Base Stats</div>
       </div>
     </div>
+    <div class = "bottom-container">
+      <div class="pokemon-color">
+        <label for="color-select"> Color: </label>
+        <select id="color-select" onchange="changeImage()">
+          <option value="normal">Normal</option>
+          <option value="shiny">Shiny</option>
+        </select>
+      </div>
+
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
