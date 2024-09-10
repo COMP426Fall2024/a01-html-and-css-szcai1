@@ -1,24 +1,51 @@
-<img
-  id="blastoise"
-  class="pokemon-img"
-  src="./images/003.png"
-  alt="image of pokemon venusuar"
-/>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kanto Final Evolution Pokedex Entries</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <a href="blastoise.html" class="previous round">&#8249;</a>
 
+      <div class="title">
+        <h1 id="venusuar-title">Venusuar フシギバナ #0003</h1>
+      </div>
+      <a href="index.html" class="next round">&#8250;</a>
+    </div>
 
-             <div class="pokemon-color"></div>
-          <label for="color-select"> Color: </label>
-          <select id="color-select" onchange="changeImage()">
-            <option value="normal">Normal</option>
-            <option value="shiny">Shiny</option>
-          </select>
+    <div class="top-container">
+      <img
+        id="venusuar-img"
+        class="pokemon-img"
+        src="./images/003.png"
+        alt="image of pokemon venusuar"
+      />
+
+      <div class="container-vertical">
+        <div class="pokemon-pokedex-entry" style="border-color: rgb(3, 151, 99)">
+          <p>
+            Venusaur is a large, plant-like Pokémon recognized for the giant blooming flower on its back, which radiates a calming, fragrant aroma. Standing on four sturdy legs with a thick, green hide, Venusaur uses its plant's broad leaves and roots to draw energy from the sun, powering up its potent Grass-type attacks. The flower can release powerful pollen and toxic spores, which Venusaur uses strategically in battle to disorient or poison its foes. Despite its massive size and strength, Venusaur is known for its balanced nature, often acting as a guardian of the forest, nurturing the plants and Pokémon around it.
+          </p>
         </div>
-        <div class="top-container-right">
-       
+        <div class="container-horizontal">
+          <div class="pokemon-types" style="border-color:rgb(3, 151, 99)">
+            <h2>Type</h2>
+            <span class="type grass">Grass</span>
+            <span class="type poison">Poison</span>
 
-        
-     
-  
+
+            <h2 style="margin-top: 30px;">Weakness</h2>
+            <span class="type fire">Fire</span>
+            <span class="type ice">Ice</span>
+            <span class="type flying">Flying</span>
+            <span class="type psychic">Psychic</span>
+
+
+          </div>
+
           <div class="pokemon-pokedex-data">
             <table>
               <tr>
@@ -26,16 +53,16 @@
                 <th>Category</th>
               </tr>
               <tr>
-                <td>1.7m (5' 07")</td>
-                <td>Flame</td>
+                <td>2.0m (6' 07")</td>
+                <td>Seed</td>
               </tr>
               <tr>
                 <th>Weight</th>
                 <th>Abilities</th>
               </tr>
               <tr>
-                <td>199.5 lbs</td>
-                <td>Blaze???</td>
+                <td>220.5 lbs</td>
+                <td>Overgrow</td>
               </tr>
               <tr>
                 <th>Gender</th>
@@ -44,83 +71,89 @@
                 <td><span style="color:lightskyblue">87.5% male</span><span style="color:pink"> 12.5% female</span></td>
               </tr>
             </table>
-          </div> -->
+          </div> 
         </div>
-  
-      </div>
-      <div class="bottom-container">
-        <div class="bottom-container-left">
           <div class="stats">
             <h2>Base Stats</h2>
             <table>
               <tr>
                 <th>Total</th>
-                <td style="font-weight: bold;">634</td>
+                <td style="font-weight: bold;">525</td>
                 <td class="cell-barchart"></td>
                 <th>Min</th>
                 <th>Total</th>
               </tr>
               <tr>
                 <th>HP</th>
-                <td>87</td>
-                <td class="cell-barchart"><div class="barchart-bar" style="width:87px; background-color: #ffdd57;;"></div></td>
-                <td>266</th>
-                <td>360</th>
+                <td>80</td>
+                <td class="cell-barchart"><div class="barchart-bar" style="width:160px; background-color: #ffdd57;;"></div></td>
+                <td>270</th>
+                <td>364</th>
               </tr>
               <tr>
                 <th>Attack</th>
-                <td>130</td>
-                <td class="cell-barchart"><div class="barchart-bar" style="width:130px; background-color:#23cd5e ;"></div></td>
-                <td>238</th>
-                <td>394</th>
+                <td>82</td>
+                <td class="cell-barchart"><div class="barchart-bar" style="width:164px; background-color:#ffdd57 ;"></div></td>
+                <td>152</th>
+                <td>289</th>
               </tr>
               <tr>
                 <th>Defense</th>
-                <td>111</td>
-                <td class="cell-barchart"><div class="barchart-bar" style="width:111px; background-color:#a0e515 ;"></div></td>
-                <td>204</th>
-                <td>353</th>
+                <td>83</td>
+                <td class="cell-barchart"><div class="barchart-bar" style="width:166px; background-color:#ffdd57 ;"></div></td>
+                <td>153</th>
+                <td>291</th>
               </tr>
               <tr>
                 <th>Sp. Atk</th>
-                <td>130</td>
-                <td class="cell-barchart"><div class="barchart-bar" style="width:131px; background-color:#23cd5e ;"></div></td>
-                <td>238</th>
-                <td>394</th>
+                <td>100</td>
+                <td class="cell-barchart"><div class="barchart-bar" style="width:200px; background-color:#a0e515 ;"></div></td>
+                <td>184</th>
+                <td>328</th>
               </tr>
               <tr>
                 <th>Sp. Def</th>
-                <td>85</td>
-                <td class="cell-barchart"><div class="barchart-bar" style="width:85px; background-color:#ffdd57 ;"></div></td>
-                <td>157</th>
-                <td>295</th>
+                <td>100</td>
+                <td class="cell-barchart"><div class="barchart-bar" style="width:200px; background-color:#a0e515 ;"></div></td>
+                <td>184</th>
+                <td>328</th>
               </tr>
               <tr>
                 <th>Speed</th>
-                <td>100</td>
-                <td class="cell-barchart"><div class="barchart-bar" style="width:100px; background-color:#a0e515 ;"></div></td>
-                <td>184</th>
-                <td>328</th>
+                <td>80</td>
+                <td class="cell-barchart"><div class="barchart-bar" style="width:160px; background-color:#ffdd57 ;"></div></td>
+                <td>148</th>
+                <td>284</th>
               </tr>
             </table>
           </div>
         </div>
-  
-        <div class="bottom-container-right">
-          <div class="pokemon-moveset">
-            <h2>Popular Movesets</h2>
-            <ul>
-              <li>Blastburn</li>
-              <li>Flamethrower</li>
-              <li>Dragon Claw</li>
-              <li>Fly</li>
-              <li>Earthquake</li>
-            </ul>
-  
-          </div>
-        
+        <div class="pokemon-moveset" id="venusuar-moveset">
+          <h2>Popular Movesets</h2>
+          <ul>
+            <li>Solar Beam</li>
+            <li>Sludge Bomb</li>
+            <li>Earthquake</li>
+            <li>Giga Drain</li>
+            <li>Sleep Powder</li>
+            <li>Leech Seed</li>
+            <li>Synthesis </li>
+          </ul>
+
         </div>
-    </div>
-      
-  
       </div>
+    </div>
+    <div class = "bottom-container">
+      <div class="pokemon-color">
+        <label for="color-select"> Color: </label>
+        <select id="color-select" onchange="changeImage()">
+          <option value="normal">Normal</option>
+          <option value="shiny">Shiny</option>
+        </select>
+      </div>
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

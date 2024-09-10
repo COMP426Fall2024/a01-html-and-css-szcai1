@@ -1,6 +1,155 @@
-<img
-  id="blastoise"
-  class="pokemon-img"
-  src="./images/009.png"
-  alt="image of pokemon blastoise"
-/>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kanto Final Evolution Pokedex Entries</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html" class="previous">&#8249;</a>
+
+      <div class="title">
+        <h1 id="blastoise-title">Blastoise カメックス #0009</h1>
+      </div>
+      <a href="venusuar.html" class="next">&#8250;</a>
+    </div>
+
+    <div class="top-container">
+      <img
+        id="blastoise-img"
+        class="pokemon-img"
+        src="./images/009.png"
+        alt="image of pokemon blastoise"
+      />
+
+      <div class="container-vertical">
+        <div class="pokemon-pokedex-entry" style="border-color: rgb(3,65,151)">
+          <p>
+            Blastoise is a large, turtle-like Pokémon known for its powerful water cannons and strong defensive capabilities. Standing on all fours with a tough, blue shell that protects its body, Blastoise is equipped with two large cannons on its back that can shoot high-pressure water jets with great force and accuracy. Its sturdy limbs and sharp claws allow it to stand firm in battle, while its shell provides exceptional defense against attacks. Blastoise is a calm and strategic fighter, using its water cannons to overwhelm opponents with rapid, high-powered blasts. Despite its formidable strength, Blastoise is known for its disciplined and steady nature, often acting as a protector in the wild.
+          </p>
+        </div>
+        <div class="container-horizontal">
+          <div class="pokemon-types" style="border-color:rgb(3,65,151)">
+            <h2>Type</h2>
+            <span class="type water">Water</span>
+
+            <h2 style="margin-top: 30px;">Weakness</h2>
+            <span class="type grass">Grass</span>
+            <span class="type electric">Electric</span>
+          </div>
+
+          <div class="pokemon-pokedex-data">
+            <table>
+              <tr>
+                <th>Height</th>
+                <th>Category</th>
+              </tr>
+              <tr>
+                <td>1.6m (5' 03")</td>
+                <td>Shellfish</td>
+              </tr>
+              <tr>
+                <th>Weight</th>
+                <th>Abilities</th>
+              </tr>
+              <tr>
+                <td>188.5 lbs</td>
+                <td>Torrent</td>
+              </tr>
+              <tr>
+                <th>Gender</th>
+              </tr>
+              <tr>
+                <td><span style="color:lightskyblue">87.5% male</span><span style="color:pink"> 12.5% female</span></td>
+              </tr>
+            </table>
+          </div> 
+        </div>
+          <div class="stats">
+            <h2>Base Stats</h2>
+            <table>
+              <tr>
+                <th>Total</th>
+                <td style="font-weight: bold;">530</td>
+                <td class="cell-barchart"></td>
+                <th>Min</th>
+                <th>Total</th>
+              </tr>
+              <tr>
+                <th>HP</th>
+                <td>79</td>
+                <td class="cell-barchart"><div class="barchart-bar" style="width:158px; background-color: #ffdd57;;"></div></td>
+                <td>268</th>
+                <td>362</th>
+              </tr>
+              <tr>
+                <th>Attack</th>
+                <td>83</td>
+                <td class="cell-barchart"><div class="barchart-bar" style="width:166px; background-color:#ffdd57 ;"></div></td>
+                <td>151</th>
+                <td>291</th>
+              </tr>
+              <tr>
+                <th>Defense</th>
+                <td>100</td>
+                <td class="cell-barchart"><div class="barchart-bar" style="width:200px; background-color:#a0e515 ;"></div></td>
+                <td>184</th>
+                <td>328</th>
+              </tr>
+              <tr>
+                <th>Sp. Atk</th>
+                <td>85</td>
+                <td class="cell-barchart"><div class="barchart-bar" style="width:170px; background-color:#ffdd57 ;"></div></td>
+                <td>157</th>
+                <td>295</th>
+              </tr>
+              <tr>
+                <th>Sp. Def</th>
+                <td>105</td>
+                <td class="cell-barchart"><div class="barchart-bar" style="width:210px; background-color:#a0e515 ;"></div></td>
+                <td>193</th>
+                <td>339</th>
+              </tr>
+              <tr>
+                <th>Speed</th>
+                <td>78</td>
+                <td class="cell-barchart"><div class="barchart-bar" style="width:156px; background-color:#ffdd57 ;"></div></td>
+                <td>144</th>
+                <td>280</th>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="pokemon-moveset" id="blastoise-moveset">
+          <h2>Popular Movesets</h2>
+          <ul>
+            <li>Hydropump</li>
+            <li>Ice Beam</li>
+            <li>Surf</li>
+            <li>Rapid Spin</li>
+            <li>Aqua Jet</li>
+            <li>Earthquake</li>
+            <li>Scald</li>
+
+
+          </ul>
+
+        </div>
+      </div>
+    </div>
+    <div class = "bottom-container">
+      <div class="pokemon-color">
+        <label for="color-select"> Color: </label>
+        <select id="color-select" onchange="changeImage()">
+          <option value="normal">Normal</option>
+          <option value="shiny">Shiny</option>
+        </select>
+      </div>
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
